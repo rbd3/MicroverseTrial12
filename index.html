@@ -12,23 +12,32 @@
 
     <form id="survey-form">
       <label for="name" id="name-label">Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required/>
+      <input id="name" type="text" placeholder="Enter your name" required/><br>
       <label for="email" id="email-label">Email</label>
-      <input id="email" type="email" placeholder="Enter your email" required ?>
+      <input id="email" type="email" placeholder="Enter your email" required /><br>
       <label for="Number" id="number-label"> Phone Number</label>
       <input id="number" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" minlength="9" maxlength="14" placeholder="Enter your Phone number"/>
 
-      <select name="role" id="dropdown">
-        <option>Student</option>
-        <option>Teacher</option>
-        <option>other</option>
-        </select>
-
+      <div class="dropdown">
+        <select name="role" id="dropdown">
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>other</option>
+          </select>
+  
+      </div>
+      
+        <div class="radio">
+          
         <input type="radio" name="Subject">
         <label for="Math">Math</label><br>
         <input type="radio" name="subject">
         <label for="English">English</label>
+        </div>
 
+
+        <div class="checkbox">
+          
         <label>Programming language</label>
 
         <label for="1">
@@ -38,10 +47,20 @@
            <label for="3">
           <input type="checkbox" value="python">PYTHON</input></label>
 
+
+        </div>
+
+        <div class="comment">
+          
 <label for="comment">Comment</label>
 <textarea name="comment">
 
+        </div>
+        <div class="submit">
+          
   <button type="submit" id="submit">Submit</button>
+
+        </div>
 
       </form>
   </body>
